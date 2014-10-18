@@ -30,4 +30,5 @@
 # cmake
 CMakeCache.txt
 CMakeFiles
-build
+build-make
+build-ninja

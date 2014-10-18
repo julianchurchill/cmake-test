@@ -1,15 +1,21 @@
 cmake-test
 ==========
 
-To build
---------
+Build System - Unix Make
+------------------------
 
-cd build
+mkdir build-make
+cd build-make
 cmake -G "Unix Makefiles" ..
 make
-
-To test
--------
-
 make test
+
+Build System - Ninja
+--------------------
+
+mkdir build-ninja
+cd build-ninja
+cmake -G "Ninja" ..
+ninja
+ninja test
 
