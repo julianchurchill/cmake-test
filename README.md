@@ -19,10 +19,14 @@ cmake -G "Ninja" ..
 ninja
 ninja test
 
+NOTES
+-----
+
+- Generated makefiles do depend on the CMakeLists.txt files. This means the makefiles will be auto-generated if the CMakeLists.txt change and the developer only runs 'make'.
+
 TODO
 ----
 
-- Do the generated makefiles depend on the CMakeLists.txt files? This is to determine if the makefiles will be auto-generated if the CMakeLists.txt change and the developer only runs 'make'.
 - Shared libraries (rather than static)
 - Building from sub-directories (even if the makefiles have been generated in 'build')
 - Incorporating sub-directories that already have their own makefile, e.g. 3rd party components such as the Linux kernel
